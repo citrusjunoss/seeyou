@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/models/github_user.dart';
-import 'package:flutter_template/repository/user_repository.dart';
+import 'package:seeyou/models/github_user.dart';
+import 'package:seeyou/repository/user_repository.dart';
 import 'package:get/get.dart';
 
 class UserController extends GetxController {

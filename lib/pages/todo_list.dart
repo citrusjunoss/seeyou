@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_material_pickers/helpers/show_responsive_dialog.dart';
-import 'package:flutter_template/components/add_todo_dialog.dart';
-import 'package:flutter_template/components/todo_item.dart';
-import 'package:flutter_template/controller/todo.dart';
+import 'package:seeyou/components/add_todo_dialog.dart';
+import 'package:seeyou/components/todo_item.dart';
+import 'package:seeyou/controller/todo.dart';
 import 'package:get/get.dart';
 
 class TodoListPage extends GetView<TodoController> {
@@ -33,16 +33,6 @@ class TodoListPage extends GetView<TodoController> {
             ),
           ),
         ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.add),
-        onPressed: () {
-          showMaterialResponsiveDialog(
-              title: "Add todo".tr,
-              child: const AddTodoDialog(),
-              context: context,
-              hideButtons: true);
-        },
       ),
     );
   }

@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:seeyou/controller/settings.dart';
+import 'package:seeyou/controller/dejavu.dart';
 import 'package:get/get.dart';
 
-class SettingPage extends GetResponsiveView<SettingsController> {
-  SettingPage({super.key});
+class DejaVuPage extends GetResponsiveView<DejavuController> {
+  DejaVuPage({super.key});
   @override
   Widget? builder() {
     return Scaffold(
       appBar: AppBar(
-        title: Text('settings'.tr),
+        title: Text('Dejavu'.tr),
       ),
-      body: GetX<SettingsController>(builder: (controller) {
+      body: GetX<DejavuController>(builder: (controller) {
         return ListView(
           children: [
             const Divider(),

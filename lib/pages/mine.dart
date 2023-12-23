@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:seeyou/controller/settings.dart';
+import 'package:seeyou/controller/mine.dart';
 import 'package:get/get.dart';
 
-class SettingPage extends GetResponsiveView<SettingsController> {
-  SettingPage({super.key});
+class MinePage extends GetResponsiveView<MineController> {
+  MinePage({super.key});
   @override
   Widget? builder() {
     return Scaffold(
       appBar: AppBar(
-        title: Text('settings'.tr),
+        title: Text('Mine'.tr),
       ),
-      body: GetX<SettingsController>(builder: (controller) {
+      body: GetX<MineController>(builder: (controller) {
         return ListView(
           children: [
             const Divider(),

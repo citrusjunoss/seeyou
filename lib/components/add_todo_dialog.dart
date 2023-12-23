@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/controller/todo.dart';
-import 'package:flutter_template/models/todo.dart';
+import 'package:seeyou/controller/todo.dart';
+import 'package:seeyou/models/todo.dart';
 import 'package:flutter_material_pickers/flutter_material_pickers.dart';
 import 'package:get/get.dart';
 
@@ -28,7 +28,7 @@ class _AddTodoDialogState extends State<AddTodoDialog> {
             TextFormField(
               controller: _titleController,
               decoration: const InputDecoration(
-                labelText: 'Title',
+                labelText: '标题',
               ),
               validator: (value) {
                 if (value == null || value.isEmpty) {

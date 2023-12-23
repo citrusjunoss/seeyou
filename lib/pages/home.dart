@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/components/user/github_user.dart';
-import 'package:flutter_template/controller/todo.dart';
-import 'package:flutter_template/pages/settings.dart';
-import 'package:flutter_template/pages/todo_list.dart';
+import 'package:seeyou/components/user/github_user.dart';
+import 'package:seeyou/controller/todo.dart';
+import 'package:seeyou/pages/dejavu.dart';
+import 'package:seeyou/pages/settings.dart';
+import 'package:seeyou/pages/mine.dart';
+import 'package:seeyou/pages/todo_list.dart';
 import 'package:get/get.dart';
+import 'package:material_symbols_icons/symbols.dart';
 
 class HomePage extends StatelessWidget {
   // ignore: use_key_in_widget_constructors
@@ -29,7 +32,7 @@ class HomePage extends StatelessWidget {
             itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
               const PopupMenuItem<String>(
                 value: 'all',
-                child: Text('All'),
+                child: Text('全部'),
               ),
               const PopupMenuItem<String>(
                 value: 'completed',
@@ -112,6 +115,36 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: const TodoListPage(),
+      bottomNavigationBar: BottomAppBar(
+        shape: const CircularNotchedRectangle(),
+        color: const Color.fromARGB(255, 241, 237, 221),
+        child: IconTheme(
+          data: IconThemeData(color: Theme.of(context).colorScheme.onPrimary),
+          child: Row(
+            children: <Widget>[
+              IconButton(
+                tooltip: '瞬间',
+                icon: const Icon(Symbols.cognition),
+                onPressed: () {},
+              ),
+              IconButton(
+                tooltip: '昨日重现',
+                icon: const Icon(Symbols.play_circle),
+                onPressed: () {
+                  Get.to(DejaVuPage());
+                },
+              ),
+              IconButton(
+                tooltip: '谁',
+                icon: const Icon(Symbols.smart_toy),
+                onPressed: () {
+                  Get.to(MinePage());
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

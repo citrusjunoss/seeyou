@@ -1,15 +1,15 @@
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:flutter_template/controller/settings.dart';
-import 'package:flutter_template/controller/todo.dart';
-import 'package:flutter_template/controller/user.dart';
-import 'package:flutter_template/i18n/translations.dart';
-import 'package:flutter_template/repository/todo_repository.dart';
-import 'package:flutter_template/repository/user_repository.dart';
-import 'package:flutter_template/routes.dart';
-import 'package:flutter_template/pages/unknown.dart';
-import 'package:flutter_template/service/http_service.dart';
+import 'package:seeyou/controller/settings.dart';
+import 'package:seeyou/controller/todo.dart';
+import 'package:seeyou/controller/user.dart';
+import 'package:seeyou/i18n/translations.dart';
+import 'package:seeyou/repository/todo_repository.dart';
+import 'package:seeyou/repository/user_repository.dart';
+import 'package:seeyou/routes.dart';
+import 'package:seeyou/pages/unknown.dart';
+import 'package:seeyou/service/http_service.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
